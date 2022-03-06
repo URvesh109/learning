@@ -57,7 +57,7 @@ describe("learning", () => {
 
     const tmp = new anchor.Program(idl, program.programId.toBase58());
 
-    let secretKey = await readFile("../../learningKeypair.json", {
+    let secretKey = await readFile("learningKeypair.json", {
       encoding: "utf8",
     });
     secretKey = Uint8Array.from(JSON.parse(secretKey));
@@ -76,7 +76,6 @@ describe("learning", () => {
     const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
 
     const tx = await sendAndConfirmTransaction(connection, trans, [signers]);
-    console.log("Transaction ", tx);
     console.log("Increment ");
     const state: any = await program.account.counter.fetch(
       counter.publicKey.toBase58()
