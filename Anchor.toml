@@ -1,6 +1,6 @@
 [features]
 seeds = false
-[programs.devnet]
+[programs.localnet]
 learning = "AgSmLGJvPPhtg5g5C1bXBbwpJqDRW6SwXKKKBJjtqP9Z"
 puppet = "EpMS9dNS8UQffqtuYtnTgFd1GA7VpzCAfc44mktBxEzX"
 puppet_master = "7heuPnsQxZmQgEs96PcduTH5utWyXhiQkXRZtHWyTeD2"
@@ -9,7 +9,7 @@ puppet_master = "7heuPnsQxZmQgEs96PcduTH5utWyXhiQkXRZtHWyTeD2"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "devnet"
+cluster = "localnet"
 wallet = "learningKeypair.json"
 
 [scripts]

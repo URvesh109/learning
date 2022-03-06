@@ -1,0 +1,72 @@
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568108000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program system_program under 11111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568181000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program system_program under 11111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568190000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program vote_program under Vote111111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568198000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program vote_program under Vote111111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568203000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program stake_program under Stake11111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568209000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program stake_program under Stake11111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568214000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program config_program under Config1111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568223000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program config_program under Config1111111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568228000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program solana_bpf_loader_deprecated_program under BPFLoader1111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568236000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program solana_bpf_loader_deprecated_program under BPFLoader1111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568241000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program solana_bpf_loader_program under BPFLoader2111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568250000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program solana_bpf_loader_program under BPFLoader2111111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568255000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program solana_bpf_loader_upgradeable_program under BPFLoaderUpgradeab1e11111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568262000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program solana_bpf_loader_upgradeable_program under BPFLoaderUpgradeab1e11111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568331000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program compute_budget_program under ComputeBudget111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568340000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program compute_budget_program under ComputeBudget111111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568344000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Removing program KeccakSecp256k11111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568359000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Removed program KeccakSecp256k11111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568363000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Removing program Ed25519SigVerify111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568368000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Removed program Ed25519SigVerify111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568372000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding program address_lookup_table_program under AddressLookupTab1e1111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568380000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added program address_lookup_table_program under AddressLookupTab1e1111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568394000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding precompiled program KeccakSecp256k11111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568400000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added precompiled program KeccakSecp256k11111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568403000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Adding precompiled program Ed25519SigVerify111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.568409000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m Added precompiled program Ed25519SigVerify111111111111111111111111111
+[0m[38;5;8m[[0m2022-03-06T02:34:19.579017000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:19.596604000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 0 hash: 9KtiWZUqgG3MhnL3UgbBrwMb3yig9J7D8ACNDSLwbhpB accounts_delta: EZM43XzXsAmBUXjk8GBaHrZkmKwQgSQk7FPr9FTHxjdw signature_count: 0 last_blockhash: DgWomexBxNUGqGsnUk7U4GKTRoMemc3a7sz8kXeQgBY2 capitalization: 503000502139157136
+[0m[38;5;8m[[0m2022-03-06T02:34:19.596618000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 0 stats: BankHashStats { num_updated_accounts: 98, num_removed_accounts: 0, num_lamports_stored: 503000502181863697, total_data_len: 535828, num_executable_accounts: 16 }
+[0m[38;5;8m[[0m2022-03-06T02:34:19.792551000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:19.798654000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:19.798721000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 1us load: 6us execute: 44us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:19.798964000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 53us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.291482000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:20.292132000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 1 hash: GV5ZskH197thAwpAusHm719A3Vt11fPucUsRt14CMMA7 accounts_delta: G2J6YCAV9tSZrkrLcBoVGWStQgK3fNZJ1DocE5eCJNu1 signature_count: 2 last_blockhash: H26DBBqM3NDNgJrWyyqqEzAhcz99SrV3S4Pwng8xD7zw capitalization: 503000502282644496
+[0m[38;5;8m[[0m2022-03-06T02:34:20.292170000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 1 stats: BankHashStats { num_updated_accounts: 6, num_removed_accounts: 0, num_lamports_stored: 1000501100689200, total_data_len: 161364, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2022-03-06T02:34:20.292705000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:20.308775000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.308899000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 3us load: 13us execute: 74us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.315260000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 250us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.796172000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed fee: 5000 (rounded from: 10000, burned: 5000)
+[0m[38;5;8m[[0m2022-03-06T02:34:20.796285000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:20.797338000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 2 hash: CJsCDU37E7973AkEwU31GBuvBDjrYWg4osj4S5pp4uLH accounts_delta: Gij4CpENBJJ36QZMRLeiTEPX7AkkGkCxSt6tK4aR7AxQ signature_count: 2 last_blockhash: CzqKb5VK8Xi78RfvRbuVhgv8io2wZD3vUo2kZWR9JUTw capitalization: 503000502282639496
+[0m[38;5;8m[[0m2022-03-06T02:34:20.797479000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 2 stats: BankHashStats { num_updated_accounts: 7, num_removed_accounts: 0, num_lamports_stored: 1001001100674200, total_data_len: 161364, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2022-03-06T02:34:20.798288000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:20.817099000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.817210000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 2us load: 13us execute: 71us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:20.819798000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 92us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.296565000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed fee: 5000 (rounded from: 10000, burned: 5000)
+[0m[38;5;8m[[0m2022-03-06T02:34:21.296648000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:21.297778000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 3 hash: EzV8NWTD67HEALH2kDusFKeNgMgQQJDnLc9CyG3rQge8 accounts_delta: 9KWKXtgHthbu9ScgzhuJ4sWL7uyJvb4XMnk7at5DFxAQ signature_count: 2 last_blockhash: 4QvPfLRM25CStiSukJN78CPEfzb3baZJ6LJdCKXfTTgj capitalization: 503000502282634496
+[0m[38;5;8m[[0m2022-03-06T02:34:21.297836000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 3 stats: BankHashStats { num_updated_accounts: 7, num_removed_accounts: 0, num_lamports_stored: 1001001100664200, total_data_len: 161364, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2022-03-06T02:34:21.298640000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:21.316250000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.316402000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 4us load: 18us execute: 95us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.320227000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 123us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.793343000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed fee: 5000 (rounded from: 10000, burned: 5000)
+[0m[38;5;8m[[0m2022-03-06T02:34:21.793442000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:21.794282000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 4 hash: 9FEZx64mVrymWhBQc28pyUANMiFgPaH27ev6uP5UQHbK accounts_delta: 5zsjr3nJwn9vzaBHoMqZsB9dizibwriZZ3SqqUBgsCwN signature_count: 2 last_blockhash: 6FbcXnupP7mxfLfysv3yFWn31ppnRrs4sjTowdBY6DyM capitalization: 503000502282629496
+[0m[38;5;8m[[0m2022-03-06T02:34:21.794332000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 4 stats: BankHashStats { num_updated_accounts: 7, num_removed_accounts: 0, num_lamports_stored: 1001001100654200, total_data_len: 161364, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2022-03-06T02:34:21.795039000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:21.812977000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.813121000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 4us load: 15us execute: 91us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:21.816928000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 116us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:22.288911000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed fee: 5000 (rounded from: 10000, burned: 5000)
+[0m[38;5;8m[[0m2022-03-06T02:34:22.288977000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m distributed rent: 0 (rounded from: 0, burned: 0)
+[0m[38;5;8m[[0m2022-03-06T02:34:22.289741000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 5 hash: 5XmwsgPc1gRok2cCWE2SZS7NCEQ1KXgKHNPqzGxoqe6o accounts_delta: DP7qenawsm5XJEr4f4oeo3okHYPEYLx1uKcZQbbb8RJZ signature_count: 2 last_blockhash: 97FuR4KTuTdUCKgh6uTQHW8dob3T953uKduNtEyvp4Xq capitalization: 503000502282624496
+[0m[38;5;8m[[0m2022-03-06T02:34:22.289785000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 5 stats: BankHashStats { num_updated_accounts: 7, num_removed_accounts: 0, num_lamports_stored: 1001001100644200, total_data_len: 161364, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2022-03-06T02:34:22.290313000Z [0m[34mDEBUG[0m solana_runtime::bank::executor_cache[0m[38;5;8m][0m Executor Cache Stats -- Hits: 0, Misses: 0, Evictions: 0, Insertions: 0, Replacements: 0
+[0m[38;5;8m[[0m2022-03-06T02:34:22.306481000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m processing transactions: 1
+[0m[38;5;8m[[0m2022-03-06T02:34:22.306580000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m check: 2us load: 11us execute: 65us txs_len=1
+[0m[38;5;8m[[0m2022-03-06T02:34:22.312353000Z [0m[34mDEBUG[0m solana_runtime::bank[0m[38;5;8m][0m store: 83us txs_len=1
