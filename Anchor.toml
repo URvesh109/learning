@@ -1,18 +1,20 @@
 [features]
 seeds = false
-[programs.devnet]
+[programs.localnet]
 learning = "AgSmLGJvPPhtg5g5C1bXBbwpJqDRW6SwXKKKBJjtqP9Z"
 puppet = "EpMS9dNS8UQffqtuYtnTgFd1GA7VpzCAfc44mktBxEzX"
 puppet_master = "7heuPnsQxZmQgEs96PcduTH5utWyXhiQkXRZtHWyTeD2"
+tic_tac_toe = "2QXMhVpni3MZ82bNNHp3Y7aBWZKk31M86RakY5mkASU5"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "devnet"
+cluster = "localnet"
 wallet = "learningKeypair.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
 learning = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/learning/learning.ts"
 puppet_master = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/puppet_master/puppet_master.ts"
+tic_tac_toe = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/tic_tac_toe/tic_tac_toe.ts"
