@@ -8,9 +8,7 @@ import { Keypair, SystemProgram, PublicKey } from "@solana/web3.js";
 describe("puppet", () => {
   const provider = anchor.Provider.local("http://127.0.0.1:8899");
   anchor.setProvider(provider);
-  const { SystemProgram } = anchor.web3;
   const puppet = anchor.workspace.Puppet as Program<Puppet>;
-  const pda = anchor.workspace.Puppet as Program<PdaEg>;
   const puppet_master = anchor.workspace.PuppetMaster as Program<PuppetMaster>;
   const newPuppetAccount = anchor.web3.Keypair.generate();
 
