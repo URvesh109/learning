@@ -10,6 +10,7 @@ describe("puppet", () => {
   anchor.setProvider(provider);
   const { SystemProgram } = anchor.web3;
   const puppet = anchor.workspace.Puppet as Program<Puppet>;
+  const pda = anchor.workspace.Puppet as Program<PdaEg>;
   const puppet_master = anchor.workspace.PuppetMaster as Program<PuppetMaster>;
   const newPuppetAccount = anchor.web3.Keypair.generate();
 
@@ -23,11 +24,6 @@ describe("puppet", () => {
 
     //create new puppet account
     const tx = await puppet.rpc.initialize(useLess.publicKey, {
-      // not working if new key used even if puppet_master authority is same
-      // const tx = await puppet.rpc.initialize(provider.wallet.publicKey, {
-      // it is working if puppet_master authority is same
-      // const tx = await puppet.rpc.initialize(puppetMasterPDA, {
-      // it is working if puppet_master authority is same
       accounts: {
         puppet: newPuppetAccount.publicKey,
         user: provider.wallet.publicKey,
@@ -48,11 +44,12 @@ describe("puppet", () => {
         accounts: {
           puppet: newPuppetAccount.publicKey,
           puppetProgram: puppet.programId,
-          // authority: puppetMasterPDA, // it will work
+          authority: puppetMasterPDA, // it will work
           // authority: provider.wallet.publicKey, // it will work
-          authority: useLess.publicKey, // it won't work
+          // authority: useLess.publicKey, // it won't work
+          // authority: newSigners.publicKey, // it is not working
         },
-        // signers: [useLess],
+        // signers: [newSigners], // it is not working
       }
     );
     const puppetAccount = await puppet.account.data.fetch(

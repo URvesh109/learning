@@ -13,7 +13,7 @@ describe("game", async () => {
     const [userStatsPDA, _] = await PublicKey.findProgramAddress(
       [
         anchor.utils.bytes.utf8.encode("user-stats"),
-        anchor.getProvider().wallet.publicKey.toBuffer(),
+        provider.wallet.publicKey.toBuffer(),
       ],
       program.programId
     );
