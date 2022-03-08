@@ -27,7 +27,6 @@ describe("puppet", () => {
 
     await connection.confirmTransaction(sig);
     const bal = await connection.getBalance(newSigners.publicKey);
-    console.log("Check balance ", newSigners.publicKey.toBase58());
     //create new puppet account
     const tx = await puppet.rpc.initialize(newSigners.publicKey, {
       accounts: {
@@ -35,10 +34,10 @@ describe("puppet", () => {
         user: newSigners.publicKey,
         systemProgram: SystemProgram.programId,
       },
-      signers: [newPuppetAccount, newSigners],
+      signers: [newPuppetAccount],
     });
 
-    const tx1 = await puppet_master.rpc.pullStrings(
+    await puppet_master.rpc.pullStrings(
       puppetMasterBump,
       new anchor.BN("1111"),
       {
@@ -46,11 +45,9 @@ describe("puppet", () => {
         accounts: {
           puppet: newPuppetAccount.publicKey,
           puppetProgram: puppet.programId,
-          authority: puppetMasterPDA, // it will work
-          // authority: provider.wallet.publicKey, // it will work
-          // authority: newSigners.publicKey, // it is  working
+          // authority: puppetMasterPDA, // it will work
+          authority: newSigners.publicKey, // it is  working
         },
-        // signers: [newSigners], // it is not working
       }
     );
 
