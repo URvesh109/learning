@@ -29,7 +29,7 @@ pub struct Initialize<'info> {
 
 #[derive(Accounts)]
 pub struct SetData<'info> {
-    #[account(mut)]
+    #[account(mut, has_one = authority)]
     pub puppet: Account<'info, Data>,
     pub authority: Signer<'info>
 }

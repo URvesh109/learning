@@ -3,44 +3,42 @@ import { Program } from "@project-serum/anchor";
 import { Puppet } from "../../target/types/puppet";
 import { PuppetMaster } from "../../target/types/puppet_master";
 import { strict as assert } from "assert";
-import { Keypair, SystemProgram, PublicKey } from "@solana/web3.js";
+import { Keypair, SystemProgram, PublicKey, Connection } from "@solana/web3.js";
 
 describe("puppet", () => {
-  const provider = anchor.Provider.local("http://127.0.0.1:8899");
+  let newSigners = new Keypair();
+  const connection = new Connection("http://127.0.0.1:8899/");
+
+  let wallet = new anchor.Wallet(newSigners);
+
+  const provider = new anchor.Provider(connection, wallet, {
+    preflightCommitment: "processed",
+  });
   anchor.setProvider(provider);
-  const { SystemProgram } = anchor.web3;
   const puppet = anchor.workspace.Puppet as Program<Puppet>;
   const puppet_master = anchor.workspace.PuppetMaster as Program<PuppetMaster>;
-  const newPuppetAccount = anchor.web3.Keypair.generate();
+  const newPuppetAccount = new Keypair();
 
   it("Perform CPI from puppet master to puppet", async () => {
     const [puppetMasterPDA, puppetMasterBump] =
       await PublicKey.findProgramAddress([], puppet_master.programId);
 
-    let useLess = Keypair.generate();
+    const sig = await connection.requestAirdrop(newSigners.publicKey, 1e9);
 
-    console.log("PuppetMasterPDA", puppetMasterPDA.toBase58());
-
+    await connection.confirmTransaction(sig);
+    const bal = await connection.getBalance(newSigners.publicKey);
+    console.log("Check balance ", newSigners.publicKey.toBase58());
     //create new puppet account
-    const tx = await puppet.rpc.initialize(useLess.publicKey, {
-      // not working if new key used even if puppet_master authority is same
-      // const tx = await puppet.rpc.initialize(provider.wallet.publicKey, {
-      // it is working if puppet_master authority is same
-      // const tx = await puppet.rpc.initialize(puppetMasterPDA, {
-      // it is working if puppet_master authority is same
+    const tx = await puppet.rpc.initialize(newSigners.publicKey, {
       accounts: {
         puppet: newPuppetAccount.publicKey,
-        user: provider.wallet.publicKey,
+        user: newSigners.publicKey,
         systemProgram: SystemProgram.programId,
       },
-      signers: [newPuppetAccount],
+      signers: [newPuppetAccount, newSigners],
     });
 
-    console.log("My tx", tx);
-
-    let newSigners = Keypair.generate();
-
-    await puppet_master.rpc.pullStrings(
+    const tx1 = await puppet_master.rpc.pullStrings(
       puppetMasterBump,
       new anchor.BN("1111"),
       {
@@ -48,13 +46,14 @@ describe("puppet", () => {
         accounts: {
           puppet: newPuppetAccount.publicKey,
           puppetProgram: puppet.programId,
-          // authority: puppetMasterPDA, // it will work
+          authority: puppetMasterPDA, // it will work
           // authority: provider.wallet.publicKey, // it will work
-          authority: useLess.publicKey, // it won't work
+          // authority: newSigners.publicKey, // it is  working
         },
-        // signers: [useLess],
+        // signers: [newSigners], // it is not working
       }
     );
+
     const puppetAccount = await puppet.account.data.fetch(
       newPuppetAccount.publicKey
     );
