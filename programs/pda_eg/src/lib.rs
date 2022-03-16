@@ -53,7 +53,7 @@ pub struct CreateUserStats<'info> {
 
 #[derive(Accounts)]
 pub struct ChangeUserName<'info> {
-    pub user: Signer<'info>,
     #[account(mut, seeds = [b"user-stats", user.key().as_ref()], bump = user_stats.bump)]
-    pub user_stats: Account<'info,UserStats>
+    pub user_stats: Account<'info,UserStats>,
+    pub user: Signer<'info>,
 }

@@ -7,7 +7,7 @@ pub mod puppet {
     use super::*;
     pub fn initialize(ctx: Context<Initialize>, authority: Pubkey) -> Result<()> {
         let data = &mut ctx.accounts.puppet;
-        data.authority = *ctx.accounts.user.key;
+        data.authority = authority;
         Ok(())
     }
 
@@ -29,7 +29,7 @@ pub struct Initialize<'info> {
 
 #[derive(Accounts)]
 pub struct SetData<'info> {
-    #[account(mut)]
+    #[account(mut, has_one = authority)]
     pub puppet: Account<'info, Data>,
     pub authority: Signer<'info>
 }
