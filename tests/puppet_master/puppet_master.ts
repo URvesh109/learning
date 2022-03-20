@@ -37,6 +37,39 @@ describe("puppet", () => {
       signers: [newPuppetAccount],
     });
 
+    // const txId = await puppet.rpc.setData(new anchor.BN("1111"), {
+    //   accounts: {
+    //     puppet: newPuppetAccount.publicKey,
+    //     authority: newSigners.publicKey,
+    //   },
+    // });
+
+    // let random_signer = new Keypair();
+
+    // let new_wallet = new anchor.Wallet(random_signer);
+
+    // let new_provider = new anchor.Provider(connection, new_wallet, {
+    //   preflightCommitment: "processed",
+    // });
+    // anchor.setProvider(new_provider);
+    // const new_puppet_instance = anchor.workspace.Puppet as Program<Puppet>;
+    // const new_request = await connection.requestAirdrop(
+    //   new_wallet.publicKey,
+    //   1e9
+    // );
+    // await connection.confirmTransaction(new_request);
+
+    // const txId = await new_puppet_instance.rpc.setData(new anchor.BN("1111"), {
+    //   accounts: {
+    //     puppet: newPuppetAccount.publicKey,
+    //     authority: new_wallet.publicKey,
+    //   },
+    //   signers: [new_wallet.payer],
+    // });
+
+    // console.log("newSigners is ", newSigners.publicKey.toBase58());
+    // console.log("new_wallet is ", new_wallet.publicKey.toBase58());
+
     await puppet_master.rpc.pullStrings(
       puppetMasterBump,
       new anchor.BN("1111"),
@@ -45,8 +78,8 @@ describe("puppet", () => {
         accounts: {
           puppet: newPuppetAccount.publicKey,
           puppetProgram: puppet.programId,
-          // authority: puppetMasterPDA, // it will work
-          authority: newSigners.publicKey, // it is  working
+          authority: puppetMasterPDA, // it will not work has_one constrait was violated
+          // authority: newSigners.publicKey, // it is  working
         },
       }
     );

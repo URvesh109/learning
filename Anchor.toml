@@ -2,8 +2,8 @@
 seeds = false
 [programs.localnet]
 learning = "CWrypf5PYX2m4abhtBpsynXCzz9QB5Bim9YBtB4TF1fJ"
-puppet = "EpMS9dNS8UQffqtuYtnTgFd1GA7VpzCAfc44mktBxEzX"
-puppet_master = "7heuPnsQxZmQgEs96PcduTH5utWyXhiQkXRZtHWyTeD2"
+puppet = "5cb1avvJp6Xev5vp3p7bLxGY91UsSLNFwjYAmdSrQzEY"
+puppet_master = "3sXJMHkG2b4chuj7QpbC4Jdi74BCmFASBRY63rbz948p"
 tic_tac_toe = "2QXMhVpni3MZ82bNNHp3Y7aBWZKk31M86RakY5mkASU5"
 pda_eg = "77rG3XEQg63jeuasmVcxDxsnDUqRPKNX8AHRm1QjAC3F"
 permissioned = "ADMMp4aPLZsrjbiv7NSMNrquDofnnm6Dh3ra6dRoB5nA"
