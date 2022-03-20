@@ -1,11 +1,13 @@
 use anchor_lang::prelude::*;
 
-declare_id!("AgSmLGJvPPhtg5g5C1bXBbwpJqDRW6SwXKKKBJjtqP9Z");
+declare_id!("CWrypf5PYX2m4abhtBpsynXCzz9QB5Bim9YBtB4TF1fJ");
 
 #[program]
 pub mod learning {
     use super::*;
+    #[access_control(Initialize::checking(&ctx, start))]
     pub fn intialize(ctx: Context<Initialize>, start: u64) -> Result<()> {
+        msg!("from Intialize method");
         let counter = &mut ctx.accounts.counter;
         counter.authority = *ctx.accounts.authority.key;
         counter.count = start;
@@ -40,4 +42,11 @@ pub struct Increment<'info> {
 pub struct Counter {
     pub authority: Pubkey,
     pub count: u64
+}
+
+impl<'info> Initialize<'info> {
+    pub fn checking(ctx: &Context<Initialize>, start: u64) -> Result<()> {
+        msg!("Checking {}", start);
+        Ok(())
+    }
 }

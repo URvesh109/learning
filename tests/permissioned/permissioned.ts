@@ -1,10 +1,10 @@
 import * as anchor from "@project-serum/anchor";
-import { Program } from "@project-serum/anchor";
+import { Program, web3 } from "@project-serum/anchor";
 import { Permissioned } from "../../target/types/permissioned";
 import { strict as assert } from "assert";
 import { readFile } from "mz/fs";
-import { PublicKey } from "@solana/web3.js";
 
+const { PublicKey } = web3;
 const candyMachinPublicKey = new PublicKey(
   "BKS64Ki5cZKS8NAt3UGGhjRPUcAnJFzo6hVsctu6pSLp"
 );
