@@ -11,7 +11,7 @@ pub mod permissioned {
         Ok(())
     }
 
-    pub fn add_user_to_list(ctx: Context<AddUser>, user: Pubkey) -> Result<()> {
+    pub fn add_user_to_list(ctx: Context<AddUser>, _user: Pubkey) -> Result<()> {
         let add_user = &mut ctx.accounts.users;
         add_user.authorites.push(*ctx.accounts.signer.key);
         Ok(())

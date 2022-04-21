@@ -7,6 +7,9 @@ puppet_master = "3sXJMHkG2b4chuj7QpbC4Jdi74BCmFASBRY63rbz948p"
 tic_tac_toe = "2QXMhVpni3MZ82bNNHp3Y7aBWZKk31M86RakY5mkASU5"
 pda_eg = "77rG3XEQg63jeuasmVcxDxsnDUqRPKNX8AHRm1QjAC3F"
 permissioned = "ADMMp4aPLZsrjbiv7NSMNrquDofnnm6Dh3ra6dRoB5nA"
+foo = "FFBqXEPMkJ5dj4PMmaA2ZoQxYg149HxPsefxUhwUivpU"
+foo_master = "kGqRCrxhRZvmGQQQx1rmKBuV9EHS6w7FsA1FmSDRJdM"
+
 
 [registry]
 url = "https://anchor.projectserum.com"
@@ -25,3 +28,4 @@ pda_eg = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/pda_eg/pda_eg.ts
 wallet = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/api/wallet_address.ts"
 token_mint = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/api/token_mint_address.ts"
 permissioned = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/permissioned/permissioned.ts"
+foo_master = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/foo_master/foo_master.ts"

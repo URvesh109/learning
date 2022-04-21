@@ -45,7 +45,7 @@ pub struct Counter {
 }
 
 impl<'info> Initialize<'info> {
-    pub fn checking(ctx: &Context<Initialize>, start: u64) -> Result<()> {
+    pub fn checking(_ctx: &Context<Initialize>, start: u64) -> Result<()> {
         msg!("Checking {}", start);
         Ok(())
     }

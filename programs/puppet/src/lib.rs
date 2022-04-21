@@ -5,7 +5,7 @@ declare_id!("5cb1avvJp6Xev5vp3p7bLxGY91UsSLNFwjYAmdSrQzEY");
 #[program]
 pub mod puppet {
     use super::*;
-    pub fn initialize(ctx: Context<Initialize>, authority: Pubkey) -> Result<()> {
+    pub fn initialize(ctx: Context<Initialize>, _authority: Pubkey) -> Result<()> {
         let data = &mut ctx.accounts.puppet;
         data.authority = *ctx.accounts.user.key;
         Ok(())
@@ -27,20 +27,20 @@ pub struct Initialize<'info> {
     pub system_program: Program<'info, System>,
 }
 
-// #[derive(Accounts)]
-// pub struct SetData<'info> {
-//     #[account(mut)]
-//     pub puppet: Account<'info, Data>,
-//     pub authority: Signer<'info>
-// }
-
-
 #[derive(Accounts)]
 pub struct SetData<'info> {
-    #[account(mut, has_one = authority)]
+    #[account(mut)]
     pub puppet: Account<'info, Data>,
     pub authority: Signer<'info>
 }
+
+
+// #[derive(Accounts)]
+// pub struct SetData<'info> {
+//     #[account(mut, has_one = authority)]
+//     pub puppet: Account<'info, Data>,
+//     pub authority: Signer<'info>
+// }
 
 
 #[account] 

@@ -78,8 +78,7 @@ describe("puppet", () => {
         accounts: {
           puppet: newPuppetAccount.publicKey,
           puppetProgram: puppet.programId,
-          authority: puppetMasterPDA, // it will not work has_one constrait was violated
-          // authority: newSigners.publicKey, // it is  working
+          authority: puppetMasterPDA,
         },
       }
     );
@@ -87,6 +86,6 @@ describe("puppet", () => {
     const puppetAccount = await puppet.account.data.fetch(
       newPuppetAccount.publicKey
     );
-    assert.ok(puppetAccount.data.eq(new anchor.BN("1111")));
+    assert.ok(puppetAccount.data.eq(new anchor.BN("111")));
   });
 });
